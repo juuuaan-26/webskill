@@ -6,4 +6,6 @@
 
 .subrayado:hover {
   text-decoration: underline; 
+.bg-green-category{
+    background-color: #26a644;
 }
