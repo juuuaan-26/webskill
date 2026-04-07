@@ -1,11 +1,3 @@
-.subrayado {
-  text-decoration: none; 
-  color: #007bff;        
-  
-}
-
-.subrayado:hover {
-  text-decoration: underline; 
-.bg-green-category{
-    background-color: #26a644;
+.bg-header{
+    background-color: #E5FAE9;
 }
