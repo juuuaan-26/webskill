@@ -45,7 +45,7 @@
                                 data-bs-target="#registrate">Registrate</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modallogin">Inicia
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#inicioSesion">Inicia
                                 sesión</a>
                         </li>
                     </ul>
@@ -179,9 +179,10 @@
                     </div>
                     <div class="col-md-5 mb-3 text-center">
                         <h6><a href="quienessomos.html" class="text-white">Quienes somos</a></h6>
-                        <h6><a href="" class="text-white" data-toggle="modal"
-                                data-target="#modalprivacidad">Privacidad</a></h6>
-                        <h6><a href="" class="text-white" data-toggle="modal" data-target="#modalcontacto">Contacto</a>
+                        <h6><a href="" class="text-white" data-bs-toggle="modal"
+                                data-bs-target="#politicas">Privacidad</a></h6>
+                        <h6><a href="" class="text-white" data-bs-toggle="modal"
+                                data-bs-target="#contacto">Contacto</a>
                         </h6>
                     </div>
                     <div class="col-md-1 mb-3"><a href="index.html" class="btn btn-success text-right">HOME</a>
@@ -193,8 +194,7 @@
     </footer>
 
     <!-- VENTANAS MODALES -->
-    <!-- Button trigger modal -->
-    <!-- Modal -->
+    <!-- MODAL REGISTRO -->
     <div class="modal fade" id="registrate" tabindex="-1" role="dialog" aria-labelledby="modalTitleId"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -218,7 +218,7 @@
                             <label for="#repPasswd">Repite la contraseña</label>
                             <br>
                             <input type="password" name="passwd" id="repPasswd" class="w-100">
-                            
+
                             <label for="#correo">Email</label>
                             <br>
                             <input type="email" name="email" id="correo" class="w-100">
@@ -230,7 +230,188 @@
                             <label for="#telefono">Teléfono</label>
                             <br>
                             <input type="tel" name="telefono" id="telefono" class="w-100">
-                            <button type="submit" class="btn btn-primary bg-green-category border-0 w-100 mt-3">Entrar</button>
+                            <button type="submit"
+                                class="btn btn-primary bg-green-category border-0 w-100 mt-3">Entrar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL INICIO SESION -->
+    <div class="modal fade" id="inicioSesion" tabindex="-1" role="dialog" aria-labelledby="modalTitleId"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content bg-light px-4 pb-4">
+                <div class="modal-header border-0 justify-content-center">
+                    <h5 class="modal-title" id="modalTitleId">
+                        Iniciar sesión
+                    </h5>
+                </div>
+                <div class="modal-body bg-white border border-1 border-secondary rounded-1">
+                    <div class="container-fluid">
+                        <form action="" method="post">
+                            <label for="#user">Usuario</label>
+                            <br>
+                            <input type="text" name="user" id="user" class="w-100">
+
+                            <label for="#passwd">Contraseña</label>
+                            <br>
+                            <input type="password" name="passwd" id="passwd" class="w-100">
+
+                            <button type="submit"
+                                class="btn btn-primary bg-green-category border-0 w-100 mt-3">Entrar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL POLÍTICAS -->
+    <div class="modal fade" id="politicas" tabindex="-1" role="dialog" aria-labelledby="modalTitleId"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">
+                        Privacidad
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <h1>Términos y Condiciones de uso</h1>
+
+                        <h2>1. Datos generales</h2>
+                        <p>De acuerdo con el artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad
+                            de la Información y de Comercio Electrónico ponemos a su disposición los siguientes datos:
+                        </p>
+                        <p>catalogodeanimales.es está domiciliada en la calle Ronda S/N, con CIF B556677. Inscrita en el
+                            Registro Mercantil de Talavera de la Reina, Vol. xxxx, Folio xxxx, Hoja xxxx, Inscripción
+                            xxx.</p>
+                        <p>En la web catalogodeanimales.es hay una serie de contenidos de carácter informativo sobre
+                            animales, especies, y características. Su principal objetivo es facilitar a los clientes y
+                            al público en general, la información relativa a la empresa, a los productos y servicios que
+                            se ofrecen.</p>
+
+                        <h2>2. Política de privacidad</h2>
+                        <p>En cumplimiento de lo dispuesto en la Ley Orgánica 15/1999, de 13 de Diciembre, de Protección
+                            de Datos de Carácter Personal (LOPD) se informa al usuario que todos los datos que nos
+                            proporcione serán incorporados a un fichero, creado y mantenido bajo la responsabilidad de
+                            catalogodeanimales.es.</p>
+                        <p>Siempre se va a respetar la confidencialidad de sus datos personales que sólo serán
+                            utilizados con la finalidad de gestionar los servicios ofrecidos, atender a las solicitudes
+                            que nos plantee, realizar tareas administrativas, así como remitir información técnica,
+                            comercial o publicitaria por vía ordinaria o electrónica.</p>
+                        <p>Para ejercer sus derechos de oposición, rectificación o cancelación deberá dirigirse a la
+                            sede de la empresa C/Ronda S/N de Talavera de la Reina, escribirnos al siguiente correo <a
+                                href="mailto:contacto@catalogodeanimales.es">contacto@catalogodeanimales.es</a> o
+                            llámanos al 777888999.</p>
+
+                        <h2>3. Condiciones de uso</h2>
+                        <p>Las condiciones de acceso y uso del presente sitio web se rigen por la legalidad vigente y
+                            por el principio de buena fe comprometiéndose el usuario a realizar un buen uso de la web.
+                            No se permiten conductas que vayan contra la ley, los derechos o intereses de terceros.</p>
+                        <p>Ser usuario de la web de catalogodeanimales.es implica que reconoce haber leído y aceptado
+                            las presentes condiciones y lo que las extienda la normativa legal aplicable en esta
+                            materia. Si por el motivo que fuere no está de acuerdo con estas condiciones no continúe
+                            usando esta web.</p>
+                        <p>Cualquier tipo de notificación y/o reclamación solamente será válida por notificación escrita
+                            y/o correo certificado.</p>
+
+                        <h2>4. Responsabilidades</h2>
+                        <p>catalogodeanimales.es, no se hace responsable de la información y contenidos almacenados en
+                            foros, redes sociales o cualesquier otro medio que permita a terceros publicar contenidos de
+                            forma independiente en la página web del prestador.</p>
+                        <p>Sin embargo, teniendo en cuenta los art. 11 y 16 de la LSSI-CE, catalogodeanimales.es se
+                            compromete a la retirada o en su caso bloqueo de aquellos contenidos que pudieran afectar o
+                            contravenir la legislación nacional o internacional, derechos de terceros o la moral y el
+                            orden público.</p>
+                        <p>Tampoco la empresa se responsabilizará de los daños y perjuicios que se produzcan por fallos
+                            o malas configuraciones del software instalado en el ordenador del internauta. Se excluye
+                            toda responsabilidad por alguna incidencia técnica o fallo que se produzca cuando el usuario
+                            se conecte a internet. Igualmente no se garantiza la inexistencia de interrupciones o
+                            errores en el acceso al sitio web.</p>
+                        <p>Así mismo, catalogodeanimales.es se reserva el derecho a actualizar, modificar o eliminar la
+                            información contenida en su página web, así como la configuración o presentación del mismo,
+                            en cualquier momento sin asumir alguna responsabilidad por ello.</p>
+                        <p>Le comunicamos que cualquier precio que pueda ver en nuestra web será solamente orientativo.
+                            Si el usuario desea saber con exactitud el precio o si el producto en el momento actual
+                            cuenta con alguna oferta de la cual se puede beneficiar ha de acudir a alguna de las tiendas
+                            físicas con las que cuenta catalogodeanimales.es.</p>
+
+                        <h2>5. Propiedad intelectual e industrial</h2>
+                        <p>catalogodeanimales.es es titular de todos los derechos sobre el software de la publicación
+                            digital así como de los derechos de propiedad industrial e intelectual referidos a los
+                            contenidos que se incluyan, a excepción de los derechos sobre productos y servicios de
+                            carácter público que no son propiedad de esta empresa.</p>
+                        <p>Ningún material publicado en esta web podrá ser reproducido, copiado o publicado sin el
+                            consentimiento por escrito de catalogodeanimales.es.</p>
+                        <p>Toda la información que se reciba en la web, como comentarios, sugerencias o ideas, se
+                            considerará cedida a catalogodeanimales.es de manera gratuita. No debe enviarse información
+                            que NO pueda ser tratada de este modo.</p>
+                        <p>Todos los productos y servicios de estas páginas que NO son propiedad de
+                            catalogodeanimales.es son marcas registradas de sus respectivos propietarios y son
+                            reconocidas como tales por nuestra empresa. Solamente aparecen en la web de
+                            catalogodeanimales.es a efectos de promoción y de recopilación de información. Estos
+                            propietarios pueden solicitar la modificación o eliminación de la información que les
+                            pertenece.</p>
+
+                        <h2>6. Política de cookies</h2>
+                        <p>catalogodeanimales.es por su propia cuenta o la de un tercero contratado para prestación de
+                            servicios de medición, pueden utilizar cookies cuando el usuario navega por el sitio web.
+                            Las cookies son ficheros enviados al navegador por medio de un servicio web con la finalidad
+                            de registrar las actividades del usuario durante su tiempo de navegación.</p>
+                        <p>Las cookies utilizadas se asocian únicamente con un usuario anónimo y su ordenador, y no
+                            proporcionan por sí mismas los datos personales del usuario.</p>
+                        <p>Mediante el uso de las cookies resulta posible que el servidor donde se encuentra la web
+                            reconozca el navegador web utilizado por el usuario con la finalidad de que la navegación
+                            sea más sencilla. Se utilizan también para medir la audiencia y parámetros del tráfico,
+                            controlar el proceso y número de entradas.</p>
+                        <p>El usuario tiene la posibilidad de configurar su navegador para ser avisado de la recepción
+                            de cookies y para impedir su instalación en su equipo. Por favor consulte las instrucciones
+                            y manuales de su navegador para ampliar esta información.</p>
+                        <p>Para utilizar el sitio web no es necesario que el usuario permita la instalación de las
+                            cookies enviadas al sitio web, o el tercero que actúe en su nombre, sin perjuicio de que sea
+                            necesario que el usuario inicie una sesión tal en cada uno de los servicios cuya prestación
+                            requiera el previo registro.</p>
+                        <p>En todo caso las cookies tienen un carácter temporal con la única finalidad de hacer más
+                            eficaz su transmisión ulterior. En ningún caso se utilizará cookies para recoger información
+                            de carácter personal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL CONTACTO -->
+    <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content bg-light px-4 pb-4">
+                <div class="modal-header border-0 justify-content-center">
+                    <h5 class="modal-title" id="modalTitleId">
+                        Escribe tu comentario para contactar
+                    </h5>
+                </div>
+                <div class="modal-body bg-white border border-1 border-secondary rounded-1">
+                    <div class="container-fluid">
+                        <form action="" method="post">
+                            <label for="#user">Usuario</label>
+                            <br>
+                            <input type="text" name="user" id="user" class="w-100">
+
+                            <label for="#correo">Tu E-mail</label>
+                            <br>
+                            <input type="email" name="email" id="correo" class="w-100">
+
+                            <label for="#comentario">Tu comentario</label>
+                            <br>
+                            <textarea class="w-100" rows="10" name="" id=""></textarea>
+
+                            <button type="submit"
+                                class="btn btn-primary bg-green-category border-0 w-100 mt-3">Entrar</button>
                         </form>
                     </div>
                 </div>
@@ -239,7 +420,7 @@
     </div>
 
     <script>
-        var modalId = document.getElementById('modalId');
+        var modalId = document.getElementById('contacto');
 
         modalId.addEventListener('show.bs.modal', function (event) {
             // Button that triggered the modal
@@ -251,7 +432,46 @@
         });
     </script>
 
+    <script>
+        var modalId = document.getElementById('politicas');
 
+        modalId.addEventListener('show.bs.modal', function (event) {
+            // Button that triggered the modal
+            let button = event.relatedTarget;
+            // Extract info from data-bs-* attributes
+            let recipient = button.getAttribute('data-bs-whatever');
+
+            // Use above variables to manipulate the DOM
+        });
+    </script>
+
+    <script>
+        var modalId = document.getElementById('registrate');
+
+        modalId.addEventListener('show.bs.modal', function (event) {
+            // Button that triggered the modal
+            let button = event.relatedTarget;
+            // Extract info from data-bs-* attributes
+            let recipient = button.getAttribute('data-bs-whatever');
+
+            // Use above variables to manipulate the DOM
+        });
+    </script>
+
+    <script>
+        var modalId = document.getElementById('inicioSesion');
+
+        modalId.addEventListener('show.bs.modal', function (event) {
+            // Button that triggered the modal
+            let button = event.relatedTarget;
+            // Extract info from data-bs-* attributes
+            let recipient = button.getAttribute('data-bs-whatever');
+
+            // Use above variables to manipulate the DOM
+        });
+    </script>
+
+    <!------------------------------------------------------------->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
