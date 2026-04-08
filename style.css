@@ -1,3 +1,29 @@
 .bg-green-category{
     background-color: #26a644;
 }
+
+.bg-green-info{
+    background-color: #e5faea;
+}
+
+.bg-greengray-info{
+    background-color: #d9eddd;
+}
+
+.barra-desplazamiento {
+    -webkit-overflow-scrolling: touch;
+    gap: 10px;
+}
+
+.barra-desplazamiento::-webkit-scrollbar {
+    height: 12px;
+}
+
+.barra-desplazamiento::-webkit-scrollbar-thumb {
+    background: #adadad; 
+    border-radius: 4px;
+    border: 2px solid #e0e0e0;
+}
+.bg-header{
+    background-color: #E5FAE9;
+}
