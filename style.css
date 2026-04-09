@@ -27,3 +27,12 @@
 .bg-header{
     background-color: #E5FAE9;
 }
+.subrayado {
+  text-decoration: none; 
+  color: #007bff;        
+  
+}
+
+.subrayado:hover {
+  text-decoration: underline; 
+}
